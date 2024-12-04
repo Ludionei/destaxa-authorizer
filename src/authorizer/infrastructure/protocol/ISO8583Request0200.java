@@ -1,7 +1,11 @@
 package authorizer.infrastructure.protocol;
 
-public class ISO8583Request0200 extends ISO8583 {
+import java.io.Serializable;
 
+public class ISO8583Request0200 extends ISO8583 implements Serializable{
+
+	private static final long serialVersionUID = 4692091011290915725L;
+	
 	private String numeroCartao;
 	private String codigoProcessamento;
 	private String dataVencimentoCartao;

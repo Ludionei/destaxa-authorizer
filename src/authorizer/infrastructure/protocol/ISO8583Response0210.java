@@ -1,7 +1,11 @@
 package authorizer.infrastructure.protocol;
 
-public class ISO8583Response0210 extends ISO8583 {
+import java.io.Serializable;
 
+public class ISO8583Response0210 extends ISO8583 implements Serializable{
+
+	private static final long serialVersionUID = -5465620355453003565L;
+	
 	private String nsuHost;
 	private String codigoAutorizacao;
 	private String codigoResposta;
